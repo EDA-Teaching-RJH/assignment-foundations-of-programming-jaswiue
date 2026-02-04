@@ -47,13 +47,16 @@ def run_system_monolith():
             print("Crew member added.")
             
         elif opt == "3":
+            #if name doesn't exist the if statement prevents a crash
             rem = input("Name to remove: ")
-           
-            idx = n.index(rem)
-            n.pop(idx)
-            r.pop(idx)
-            d.pop(idx)
-            print("Removed.")
+            if rem in n:
+                idx = n.index(rem)
+                n.pop(idx)
+                r.pop(idx)
+                d.pop(idx)
+                print("Removed.")
+            else:
+                print("wasn't found")
             
         elif opt == "4":
             print("Analyzing...")
