@@ -1,7 +1,7 @@
 n = ["Picard", "Riker", "Data", "Worf"]
 r = ["Captain", "Commander", "Lt. Commander", "Lieutenant"]
 d = ["Command", "Command", "Operations", "Security"]
-
+#noticed 2 commands but code works regardless + not sure whether it was a mistake or not
 active = True
 
 def run_system_monolith():
