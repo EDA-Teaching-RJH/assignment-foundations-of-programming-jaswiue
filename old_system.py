@@ -24,8 +24,8 @@ def run_system_monolith():
         print("5. Exit")
         
         opt = input("Select option: ")
-        
-        if opt = "1":  
+    #changed opt = to opt ==
+        if opt == "1":  
             print("Current Crew List:")
             
             for i in range(10):
