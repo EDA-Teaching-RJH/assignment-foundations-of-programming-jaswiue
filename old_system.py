@@ -58,7 +58,7 @@ def run_system_monolith():
         elif opt == "4":
             print("Analyzing...")
             count = 0
-            
+         #seperate rank into 2 variables   
             for rank in r:
                 if rank == "Captain" or rank =="Commander": 
                     count = count + 1
