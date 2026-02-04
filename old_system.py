@@ -30,7 +30,8 @@ def run_system_monolith():
             
         #the range was too big so I changed it to the amount of elements in n
             for i in range(len(n)):
-                print(n[i] + " - " + r[i]) 
+         #n[i] and r[i] aren't strings so changed them to one      
+                print(str(n[i]) + " - " + str(r[i])) 
                 
         elif opt == "2":
             new_name = input("Name: ")
