@@ -64,3 +64,15 @@ def remove_member(names, ranks, divs, ids):
       print("member removed. ")
    else:
     print("ID not found :/ )")
+
+#Function 5: updating rank
+def update_rank(names, ranks, ids):
+   update_id = int(input("Enter ID to update rank: "))
+
+   if update_id in ids: 
+      index = ids.index(update_id)
+      new_rank = input("Enter new rank: ")
+      ranks[index] = new_rank
+      print(".... Rank has been updated.")
+   else:
+      print("ID not found :/")
