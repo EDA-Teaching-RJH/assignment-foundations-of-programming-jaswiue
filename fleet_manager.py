@@ -102,3 +102,18 @@ def filter_by_division(names, divs):
    for i in range(len(names)):
       if divs[i] == division:
          print(names[i])
+
+#function 9: calculate payroll
+def calculate_payroll(ranks):
+   rank_salaries = {
+      "captain": 1000,
+      "commander": 800,
+      "lieutenant commander": 600,
+      "lieutenant": 400
+   }
+   total_payroll = 0
+
+   for rank in ranks:
+      total_payroll += rank_salaries.get(rank, 0)
+
+   print(f"Total payroll: £{total_payroll}")
