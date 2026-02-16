@@ -93,3 +93,12 @@ def search_crew(names,ranks, divs, ids):
    for i in range(len(names)):
       if term in names[i].lower():
             print(f"{ids[i]}|{names[i]}|{ranks[i]}|{divs[i]}")
+
+#function 8: filter by division
+def filter_by_division(names, divs):
+   division = input(" please enter a division(commmand, operations, sciences): ")
+
+   print("division memebers:")
+   for i in range(len(names)):
+      if divs[i] == division:
+         print(names[i])
