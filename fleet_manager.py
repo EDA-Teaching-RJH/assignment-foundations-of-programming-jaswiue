@@ -76,3 +76,11 @@ def update_rank(names, ranks, ids):
       print(".... Rank has been updated.")
    else:
       print("ID not found :/")
+
+# function 6: display roster
+def display_roster(names, ranks, divs, ids):
+   print("*******CREW ROSTER*******")
+   print(f"{'ID':<10}{'Name':<25}{'Rank':<20}{'Division':<15}")
+   
+   for i in range(len(names)):
+      print(f"{ids[i]:<10}{names[i]:<25}{ranks[i]:<20}{divs[i]:<15}")
