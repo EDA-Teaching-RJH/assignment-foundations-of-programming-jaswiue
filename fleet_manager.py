@@ -22,7 +22,18 @@ def display_menu():
     print("9. EXIT")
 
     choice = input("select an option: ")
-    return choice
-    
-    
-    
+#function 3: add members
+def add_member(names, ranks, divs, ids):
+    new_id = int(input("Enter a new ID: "))
+
+    if new_id in ids:
+      print("Error: your ID must be unique")
+    return
+
+    valid_ranks = ["captain", "commander", "lieutenant commander", "lieutenant"]
+
+    new_rank = input("Enter rank: ") 
+    if new_rank not in valid_ranks:
+      print("ERROR: Invalid rank")
+    return 
+
