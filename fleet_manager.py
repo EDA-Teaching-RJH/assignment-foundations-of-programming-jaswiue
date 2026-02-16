@@ -84,3 +84,12 @@ def display_roster(names, ranks, divs, ids):
    
    for i in range(len(names)):
       print(f"{ids[i]:<10}{names[i]:<25}{ranks[i]:<20}{divs[i]:<15}")
+
+#function 7: search crew
+def search_crew(names,ranks, divs, ids):
+   term = input("Enter name to search: ").lower()
+   
+   print=("Search Results:")
+   for i in range(len(names)):
+      if term in names[i].lower():
+            print(f"{ids[i]}|{names[i]}|{ranks[i]}|{divs[i]}")
