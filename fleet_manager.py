@@ -47,3 +47,20 @@ def add_member(names, ranks, divs, ids):
     print(".........................")
     print(".............................")
     print("... Member added successfully")
+
+
+# Function 4 : Removing a member
+def remove_member(names, ranks, divs, ids):
+   remove_id = int(input("Enter ID you want to remove: "))
+
+   if remove_id in ids:
+      index = ids.index(remove_id)
+   
+      names.pop(index)
+      ranks.pop(index)
+      divs.pop(index)
+      ids.pop(index)
+
+      print("member removed. ")
+   else:
+    print("ID not found :/ )")
