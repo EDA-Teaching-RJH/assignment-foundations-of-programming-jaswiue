@@ -36,4 +36,14 @@ def add_member(names, ranks, divs, ids):
     if new_rank not in valid_ranks:
       print("ERROR: Invalid rank")
     return 
-
+    new_name = input("Enter name: ")
+    new_div = input("Enter one of the following division (command, operations, sciences): ")
+    
+    names.append(new_name)
+    ranks.append(new_rank)
+    divs.append(new_div)
+    ids.append(new_id)
+    print("1. Add Member")
+    print(".........................")
+    print(".............................")
+    print("... Member added successfully")
