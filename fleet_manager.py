@@ -117,3 +117,11 @@ def calculate_payroll(ranks):
       total_payroll += rank_salaries.get(rank, 0)
 
    print(f"Total payroll: £{total_payroll}")
+
+ #function 10: counting officers
+def count_officers(ranks):
+   count = 0
+   for rank in ranks:
+      if rank == "captain" or rank ==" commander":
+         count += 1
+         return count  
